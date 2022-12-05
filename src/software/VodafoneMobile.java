@@ -1,0 +1,41 @@
+package software;
+
+public class VodafoneMobile implements MobileCompany 
+{
+    float cost=300 ;
+	VodafoneMobile()
+	{
+		
+	}
+public void handleForm(Form f) 
+{
+System.out.println("The saved data is :");
+for(Fields fi :f.list) {
+	 System.out.print(fi.fieldname+"--->");
+	 System.out.println(fi.content);
+	  
+ }
+}
+
+public void provideForm(Form form) {
+	// TODO Auto-generated method stub
+	form.setForm_name("We");
+	System.out.println("Enter your name: ");
+	Fields field1=new TxtField();
+	form.list.add(field1);
+	System.out.println("Enter your address: ");
+	Fields field2=new TxtField();
+	form.list.add(field2);
+	System.out.println("Enter your Phone: ");
+	Fields field3=new NumericField();
+	form.list.add(field3);
+}
+@Override
+public Float getcost()
+{
+    return cost ;
+
+}
+
+
+}
