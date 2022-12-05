@@ -38,22 +38,22 @@ public class Usermenu
 	        float amount=sc.nextFloat();
 	        System.out.println("Enter service");
 	        String service=sc.next();
-	        boolean flag=false ;
-			for (PaymentList b : PaymentList.paymentList)
-			   {
-				if(b.getservice().equals(service) &&b.getcost().equals(amount) &&b.getname().equals(user.Username))
-				{
+	        //boolean flag=false ;
+			//for (PaymentList b : PaymentList.paymentList)
+			   //{
+				//if(b.getservice().equals(service) &&b.getcost().equals(amount) &&b.getname().equals(user.Username))
+				//{
 					Refund newrefund=new Refund(service,amount ,user) ;
 					 System.out.println("Yourrequest is sent ");
 					  RefundList.addrefund(newrefund);
 					  flag=true ;
 					 
-				}
-			   }
-			if(flag==false)
-			{
-				System.out.println("Your Refund don't mactch any service ");
-			}
+				//}
+			  // }
+			//if(flag==false)
+			//{
+				//System.out.println("Your Refund don't mactch any service ");
+			//}
 	      
 	    }
 	  public  void AddtoWallet()
