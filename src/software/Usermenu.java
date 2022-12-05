@@ -46,7 +46,7 @@ public class Usermenu
 					Refund newrefund=new Refund(service,amount ,user) ;
 					 System.out.println("Yourrequest is sent ");
 					  RefundList.addrefund(newrefund);
-					  flag=true ;
+					  //flag=true ;
 					 
 				//}
 			  // }
