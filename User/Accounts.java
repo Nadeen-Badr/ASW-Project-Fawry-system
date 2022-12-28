@@ -9,6 +9,8 @@ public class Accounts
 	public String Username ;
 	public String password;
 	public String Email;
+	public Wallet W=new Wallet();
+	public float add;
     public static  List<User> accountList= new ArrayList<User>();
     public static  List<User> UsertList= new ArrayList<User>();
     public User getAccount(String name)
