@@ -8,7 +8,42 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserControl {
 
-    UserLogic userLogic = new UserLogic();
+    Accounts ac = new Accounts();
+
+    public User check(String name, String pass) {
+        User obj = ac.getAccount(name);
+        if (obj == null) {
+            return null;
+        } else {
+            if (obj.password.equals(pass)) {
+
+                return obj;
+            } else
+                return null;
+
+        }
+    }
+
+    public boolean checkname(String name) {
+        for (User ac : Accounts.accountList) {
+            if (ac.userName.equals(name)) {
+                return false;
+            }
+
+        }
+        return true;
+
+    };
+    public boolean cn(String name) {
+        for (User ac : Accounts.accountList) {
+            if (ac.userName.equals(name)) {
+                return true;
+            }
+
+        }
+        return false;
+
+    };
 
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public String SignUp(@RequestBody User user) {
@@ -25,14 +60,38 @@ public class UserControl {
             return ("please enter another name");
     }
 
-    @RequestMapping(value = "/signin", method = RequestMethod.POST)
-    public String SignIn(@RequestBody User user) {
-        User obj = check(user.userName, user.password);
-        if (obj == null) {
-            return "Not Sign Up";
-        } else {
-            return "Success Sign In";
-        }
+    @RequestMapping(value="/signin",method=RequestMethod.POST)
+    public String SignIn(@RequestBody User user){
+        User obj=check(user.userName,user.password);
+		  if(obj==null)
+		  {
+		  return "Not Sign Up" ;
+		  }
+		  else 
+		  {
+			  return "Success Sign In" ;
+		  }  
     }
+
+
+    @RequestMapping(value="/wallet",method=RequestMethod.POST)
+    public String AddWallet(@RequestBody User user){
+       
+       
+		  if(cn(user.userName))
+		  {
+          
+            user.W.balance=user.W.balance+user.add;
+           
+		  return ("Success you added : "+user.add+" and the total balance is : " +user.W.balance );
+		  }
+		  else 
+		  {
+			  return "Wrong name" ;
+		  }  
+    }
+
+
+   
 
 }
