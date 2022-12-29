@@ -34,6 +34,16 @@ public class UserControl {
         return true;
 
     };
+    public boolean cn(String name) {
+        for (User ac : Accounts.accountList) {
+            if (ac.userName.equals(name)) {
+                return true;
+            }
+
+        }
+        return false;
+
+    };
 
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     public String SignUp(@RequestBody User user) {
@@ -60,6 +70,24 @@ public class UserControl {
 		  else 
 		  {
 			  return "Success Sign In" ;
+		  }  
+    }
+
+
+    @RequestMapping(value="/wallet",method=RequestMethod.POST)
+    public String AddWallet(@RequestBody User user){
+       
+       
+		  if(cn(user.userName))
+		  {
+          
+            user.W.balance=user.W.balance+user.add;
+           
+		  return ("Success you added : "+user.add+" and the total balance is : " +user.W.balance );
+		  }
+		  else 
+		  {
+			  return "Wrong name" ;
 		  }  
     }
 
