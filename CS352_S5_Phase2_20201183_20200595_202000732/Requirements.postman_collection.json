@@ -1,0 +1,761 @@
+{
+	"info": {
+		"_postman_id": "7187ad15-0805-4042-b871-370647afdda1",
+		"name": "Requirements",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25080814"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"yassmeen\",\r\n    \"password\":\"345566\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSoeceficDiscount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AddSoeceficDiscount?Service=Mobile&percentage=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AddSoeceficDiscount"
+					],
+					"query": [
+						{
+							"key": "Service",
+							"value": "Mobile"
+						},
+						{
+							"key": "percentage",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Showpaymentlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Showpaymentlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Showpaymentlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddOverallDiscoun",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AddOverallDiscount?Transation=3&percentage=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AddOverallDiscount"
+					],
+					"query": [
+						{
+							"key": "Transation",
+							"value": "3"
+						},
+						{
+							"key": "percentage",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getrefundlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getrefundlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getrefundlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkOverallDiscount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checkOverallDiscount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkOverallDiscount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkSpeceficDiscount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checkSpeceficDiscount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checkSpeceficDiscount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShowAddWalletlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ShowAddwalletlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ShowAddwalletlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\":\"yassmeen\",\r\n    \"password\":\"345566\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddtoWallet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\":\"yassmeen\",\r\n    \"cardnumber\":\"6788000\",\r\n    \"cvv\":780\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wallet?amount=300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wallet"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Requestrefund",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Service\":\"Donation\",\r\n    \"amount\":800\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/requestRefund",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"requestRefund"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Acceptrefund",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/AcceptRefund?Refund id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AcceptRefund"
+					],
+					"query": [
+						{
+							"key": "Refund id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rejectrefund",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/RejectedRefund?Refund id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RejectedRefund"
+					],
+					"query": [
+						{
+							"key": "Refund id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/search?Providername=Mobile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "Providername",
+							"value": "Mobile"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\":\"We\",\r\n      \"type\":\"Internet\",\r\n     \"amount\" :300,\r\n     \"PaymentMethod\":\"wallet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pay",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Schools/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":400,\r\n    \"Schoolname\":\"Cairouniversity\",\r\n    \"Studentid\":\"114202000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Schools/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Schools",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NFOS/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NGOSName\":\"international\",\r\n    \"amount\":100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/NFOS/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"NFOS",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/CancerHospital/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Hospitalname\" :\"57357\",\r\n    \"transfernumber\":\"57357\",\r\n    \"amount\":400 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CancerHospital/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CancerHospital",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MonthlyReceipt/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":300,\r\n    \"zipcode\":889,\r\n    \"Homenumber\":2027770\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MonthlyReceipt/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MonthlyReceipt",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuarterReceipt/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":300,\r\n    \"zipcode\":889,\r\n    \"Homenumber\":2027770\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/QuarterReceipt/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"QuarterReceipt",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WeInternet/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Homenumber\":\"22000998\" ,\r\n    \"zibcode\":\"789\" ,\r\n    \"amount\":899\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/WeInternet/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"WeInternet",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/OrangeInternet/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Homenumber\":\"22000998\" ,\r\n    \"zibcode\":\"789\" ,\r\n    \"amount\":899\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/OrangeInternet/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"OrangeInternet",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/EtisalateInternet/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Homenumber\":\"22000998\" ,\r\n    \"zibcode\":\"789\" ,\r\n    \"amount\":899\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EtisalateInternet/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EtisalateInternet",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VodafoneInternet/Cal_Service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Homenumber\":\"22000998\" ,\r\n    \"zibcode\":\"789\" ,\r\n    \"amount\":899\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/VodafoneInternet/Cal_Service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"VodafoneInternet",
+						"Cal_Service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WeMOBILE/Cal_service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phonenumber \":\"01234556990\",\r\n    \"amount\":700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/WeMOBILE/Cal_service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"WeMOBILE",
+						"Cal_service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrangeMobiles/Cal_service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phonenumber \":\"01234556990\",\r\n    \"amount\":700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/OrangeMobiles/Cal_service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"OrangeMobiles",
+						"Cal_service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EtisalateMobile/Cal_service",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phonenumber \":\"01234556990\",\r\n    \"amount\":700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/EtisalateMobile/Cal_service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"EtisalateMobile",
+						"Cal_service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VodafoneMobile/Cal_teservice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phonenumber \":\"01234556990\",\r\n    \"amount\":700\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/VodafoneMobile/Cal_teservice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"VodafoneMobile",
+						"Cal_teservice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
